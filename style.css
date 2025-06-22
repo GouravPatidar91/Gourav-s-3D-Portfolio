@@ -298,7 +298,119 @@ canvas{
     color: #0077b5; /* LinkedIn blue */
 }
 
+/* Responsive Media Queries */
+@media screen and (max-width: 1024px) {
+    #page>h3 {
+        position: relative;
+        top: auto;
+        left: 5%;
+        margin-bottom: 20px;
+    }
+    
+    #page1>#left-text,
+    #page1>#right-text,
+    #page2>#text1,
+    #page2>#text2,
+    #page3>#text3 {
+        position: relative;
+        width: 90% !important;
+        max-width: 100% !important;
+        left: 5% !important;
+        right: auto !important;
+        top: 10% !important;
+        transform: none !important;
+        text-align: left !important;
+        margin-bottom: 30px;
+    }
 
+    #page1 {
+        display: flex;
+        flex-direction: column;
+        height: auto !important;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    #page2, #page3 {
+        height: auto !important;
+        min-height: 100vh;
+        padding: 20px 0;
+    }
+
+    .project {
+        margin: 15px 0;
+    }
+
+    .project-details h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-details p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .contact-item {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .contact-icon {
+        font-size: 20px;
+        width: 25px;
+    }
+
+    #nav {
+        padding: 0 15px;
+    }
+
+    #nav>h3 {
+        font-size: 18px;
+    }
+
+    #nav>button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Adjust for very small screens */
+@media screen and (max-width: 480px) {
+    #page>h3 {
+        font-size: 14px;
+        top: 60%;
+    }
+
+    #page>h4 {
+        font-size: 14px;
+        top: calc(60% + 80px);
+    }
+
+    .project-details h3 {
+        font-size: 1.1rem;
+    }
+
+    .project-details p {
+        font-size: 0.85rem;
+    }
+    
+    footer {
+        font-size: 12px;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(241, 241, 241, 0.9);
+        padding: 5px 10px;
+        border-radius: 4px;
+        z-index: 1000;
+    }
+    
+    #page>h4 {
+        position: relative;
+        top: auto;
+        left: 5%;
+        margin: 10px 0 30px 0;
+    }
+}
 
 #page3>#text3{
     position: absolute;
